@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;   
+}
+.headingDiv{
+    /* border: 2px solid red; */
+    height:10vh;
+    width:100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headingDiv h1{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Lobster', cursive;
+    padding-left: 50px;
+    text-shadow: 2px 2px red;
+}
+.headingDiv i{
+    /* border: 1px solid white; */
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 10px;
+     text-shadow: 2px 2px white;
+}
+.mainContainerDiv{
+    /* border: 2px solid red; */
+    height:90vh;
+    width:100vw;
+     background-color: rgb(24, 23, 23);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+.inputDiv{
+    /* border: 2px solid yellow; */
+    box-shadow: 0 0 10px yellow;
+    height: 70%;
+    width: 30%;
+    background-color: rgb(61, 60, 60);
+    background-image: url(./img/bg3.PNG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    /* border: 2px solid blue; */
+    height: 20%;
+    width: 70%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputSub{
+    /* border: 2px solid red; */
+    height: 40%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+#input{
+    /* border: 2px solid blue; */
+    height: 30%;
+    width: 70%;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.inputSub button{
+    /* border: 2px solid blue; */
+    height: 20%;
+    width: 30%;
+    border-radius: 10px;
+    color: black;
+    box-shadow: inset 0 0 10px blueviolet;
+    text-shadow: 1px 1px red;
+    background-color: gray;
+}
+.answerDiv{
+    /* border: 2px solid yellow; */
+    height: 95%;
+    width: 65%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    scroll-behavior: hi;
+}
+.answerDiv::-webkit-scrollbar {
+    display: none;
+}
+.boxDiv{
+    /* border: 2px solid blue; */
+    height: 40%;
+    width: 45%;
+    margin: 20px;
+
+}
+.boxDiv img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width:480px){
+    
+    .headingDiv h1{
+        /* border: 2px solid red; */
+        font-size: 0.8rem;
+    }
+    .headingDiv i{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+    .mainContainerDiv{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .inputDiv{
+        /* border: 2px solid yellow ; */
+        height: 40%;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .heading{
+        font-size: .6rem;
+    }
+    .inputSub{
+        /* border: 2px solid red; */
+        height: 45%;
+    }
+    #input{
+        /* border: 2px solid blue; */
+        height: 40%;
+        width: 90%;
+    }
+    .inputSub button{
+        height: 30%;
+        width: 40%;
+    }
+    .answerDiv{
+        /* border: 2px solid yellow; */
+        height: 60%;
+        width: 95%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-x: scroll;
+        scroll-behavior: hi;
+    }
+    .boxDiv{
+        /* border: 2px solid blue; */
+        height: 60%;
+        width: 70%;
+        margin: 20px;
+    
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:780px){
+   
+    .headingDiv h1{
+        /* border: 2px solid red; */
+        font-size: 1.5rem;
+    }
+    .headingDiv i{
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+    .mainContainerDiv{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .inputDiv{
+        /* border: 2px solid yellow ; */
+        height: 40%;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    .inputSub{
+        /* border: 2px solid red; */
+        height: 45%;
+    }
+    #input{
+        /* border: 2px solid blue; */
+        height: 40%;
+        width: 60%;
+    }
+    .inputSub button{
+        height: 30%;
+        width: 25%;
+    }
+    .answerDiv{
+        /* border: 2px solid yellow; */
+        height: 60%;
+        width: 95%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-x: scroll;
+        scroll-behavior: hi;
+    }
+    .boxDiv{
+        /* border: 2px solid blue; */
+        height: 40%;
+        width: 40%;
+        margin: 15px;
+        border-radius: 10px;
+    }
+}
+@media only screen and (min-width:781px){
+    .headingDiv h1{
+        /* border: 2px solid red; */
+        font-size: 1.5rem;
+    }
+    .headingDiv i{
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+    .mainContainerDiv{
+        /* border: 2px solid red; */
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-around;
+        align-items: center;
+    }
+    .inputDiv{
+        /* border: 2px solid yellow ; */
+        height: 40%;
+        width: 30%;
+        /* margin-top: 20px; */
+        margin-left:20px;
+        margin-bottom: 300px;
+    }
+    .heading{
+        font-size: .8rem;
+    }
+    .inputSub{
+        /* border: 2px solid red; */
+        height: 45%;
+    }
+    #input{
+        height: 40%;
+        width: 65%;
+    }
+    .inputSub button{
+        height: 30%;
+        width: 25%;
+    }
+  
+    .boxDiv{
+        height: 30%;
+        width: 40%;
+        margin: 15px;
+        border-radius: 10px;
+    }
+}
